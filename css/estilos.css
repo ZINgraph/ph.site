@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d6d6d6;
+}
+
+.contenedor {
+  max-width: 420px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #ffffff;
+  box-sizing: border-box;
+
+  box-shadow: 
+    0 12px 35px rgba(0,0,0,0.10),
+    0 2px 6px rgba(0,0,0,0.04);
+
+  border-radius: 8px;
+}
+
+.barra-superior {
+  width: 100%;
+  height: 32px;
+  background: #2ec4c6;
+}
+
+header {
+  text-align: left;
+  padding: 0;
+}
+
+/* TEXTOS DEL HEADER */
+.linea1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.linea2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.linea3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+}
+
+/* TITULOS GENERALES */
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+/* SECCIÓN */
+.titulo-seccion {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+}
+
+
+
+
+/* VISOR */
+.visor {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 98%;
+}
+
+.visor button {
+  background: none;
+  border: none;
+  font-size: 14px;
+}
+
+.visor-contenido {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+border: 1px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.visor img {
+  width: 100%;
+  max-width: 500px;
+transition: opacity 0.3s ease;
+}
+
+
+#descripcion {
+  font-size: 16px;
+  margin-top: 30px;
+  line-height: 1.4;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#descripcion.activo {
+  opacity: 1;
+}
+
+.controles {
+ display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.btn-nav {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 6px 0;      
+  font-size: 10px;     
+  text-transform: none;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.btn-nav:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+.btn-nav:hover {
+  background: #d6d6d6;
+  color: #111;
+}
+
+
+
+
+#textoActivo {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* POPUP */
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+.popup-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+#cerrarPopup {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ICONOS */
+.iconos img {
+  width: 30px;
+  margin: 5px;
+}
+
+.texto-fijo {
+  margin-top: 30px;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.5;
+
+  background: #2bb8b1;
+  padding: 18px;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.promo-box {
+  background: #2bb8b1;
+  color: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 17px;
+
+box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* link superior (popup) */
+.promo-link-texto {
+  display: block;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/* link inferior (contacto) */
+.promo-link-final {
+  display: inline-block;
+  margin-top: 10px;
+  color: #dcd6ff;
+  text-decoration: underline;
+}
+
+/* texto manual de marca */
+.promo-extra {
+  display: block;
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* títulos */
+.promo-titulo {
+  font-weight: 400;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.footer {
+  padding: 40px 20px;
+  text-align: left;
+  background: #fff;
+}
+
+/* título */
+.footer-titulo {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* texto */
+.footer-texto {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* teléfono */
+.footer-telefono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.icono-mini {
+  width: 16px;
+  height: 16px;
+}
+
+.telefono-texto {
+  font-size: 14,5px;
+}
+
+/* iconos */
+.footer-iconos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icono-red {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+/* barra final */
+.footer-barra {
+  width: 100%;
+  height: 30px; /* aprox 3cm visual en pantalla */
+  background: #e0e0e0;
+  margin-top: 40px;
+}
